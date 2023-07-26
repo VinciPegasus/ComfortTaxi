@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="373.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerTerzoScenario">
+   <children>
+      <ImageView fitHeight="565.0" fitWidth="373.0">
+         <image>
+            <Image url="@../../Immagini%20Progetto/appSfondo.jpg" />
+         </image>
+      </ImageView>
+       <ImageView fitHeight="40.0" fitWidth="242.0" layoutX="90.0" layoutY="522.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Immagini%20Progetto/TastoIndietroCell.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="backButton" layoutX="90.0" layoutY="531.0" mnemonicParsing="false" onMouseClicked="#backScene" prefHeight="24.0" prefWidth="47.0" style="-fx-background-color: Transparent;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <Pane layoutX="24.0" layoutY="51.0" prefHeight="322.0" prefWidth="321.0" style="-fx-background-color: black;">
+         <children>
+            <Label alignment="TOP_RIGHT" layoutX="3.0" layoutY="33.0" prefHeight="44.0" prefWidth="165.0" text="Login" textFill="#f20606">
+               <font>
+                  <Font name="System Bold Italic" size="36.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="4.0" layoutY="128.0" prefHeight="18.0" prefWidth="136.0" text="Numero telefonico:" textFill="#f5f2f2" />
+            <Label alignment="TOP_CENTER" layoutX="4.0" layoutY="173.0" prefHeight="18.0" prefWidth="136.0" text="La tua Password:" textFill="#f8f5f5" />
+            <ImageView fitHeight="61.0" fitWidth="54.0" layoutX="189.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../Scaricati/locked.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="entra" layoutX="89.0" layoutY="245.0" mnemonicParsing="false" onMouseClicked="#changeScene" prefHeight="30.0" prefWidth="136.0" style="-fx-background-color: green;" text="Entra" textFill="#fffdfd">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <PasswordField fx:id="passw" layoutX="143.0" layoutY="168.0" opacity="0.77" prefHeight="26.0" prefWidth="165.0" promptText="Password" style="-fx-background-color: white;" />
+            <TextField fx:id="cell" layoutX="143.0" layoutY="124.0" opacity="0.77" prefWidth="165.0" promptText="Cellulare" style="-fx-background-color: white;" />
+         </children>
+      </Pane>
+</children>
+</AnchorPane>

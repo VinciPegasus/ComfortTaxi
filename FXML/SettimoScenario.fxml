@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="373.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerSettimoScenario">
+   <children>
+      <ImageView fitHeight="565.0" fitWidth="373.0">
+         <image>
+            <Image url="@../../Immagini%20Progetto/appSfondo.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="16.0" layoutY="82.0" prefHeight="270.0" prefWidth="338.0" style="-fx-background-color: black;">
+         <children>
+            <Label alignment="CENTER" layoutX="9.0" layoutY="26.0" prefHeight="82.0" prefWidth="321.0" style="-fx-background-color: pink;" text="Grazie per averci scelto!!!" textAlignment="CENTER" textFill="#b80f6b" wrapText="true">
+               <font>
+                  <Font name="DejaVu Sans Bold" size="20.0" />
+               </font></Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="156.0" layoutY="113.0" prefHeight="124.0" prefWidth="168.0" text="Clicca su Invia Richiesta, a breve riceverai un sms di conferma con tutte le informazioni utili relative al nostro Taxi. Ti raggiungerà nel luogo di partenza indicato. Clicca invece Declina per uscire dall' applicazione." textFill="#f2f5f2" wrapText="true">
+               <font>
+                  <Font name="DejaVu Sans Bold" size="9.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="88.0" fitWidth="111.0" layoutX="27.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../Immagini%20Progetto/bustaMessaggio.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="InviaRichiesta" layoutX="30.0" layoutY="234.0" mnemonicParsing="false" onMouseClicked="#InviaRichiestaTaxi" prefHeight="24.0" prefWidth="161.0" style="-fx-background-color: Green;" text="Invia Richiesta" textFill="#fff8f8">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <font>
+                  <Font size="12.0" />
+               </font></Button>
+            <Button fx:id="Esci" layoutX="206.0" layoutY="234.0" mnemonicParsing="false" onMouseClicked="#esciScene" prefHeight="24.0" prefWidth="102.0" style="-fx-background-color: Red;" text="Declina" textFill="#fcfafa">
+               <font>
+                  <Font name="DejaVu Sans Bold" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </Pane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="32.0" layoutY="38.0" prefHeight="33.0" prefWidth="306.0" text="Tranquillo, pochi minuti e saremo da te!">
+         <font>
+            <Font name="DejaVu Serif Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="40.0" fitWidth="242.0" layoutX="90.0" layoutY="522.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Immagini%20Progetto/TastoIndietroCell.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="backButton" layoutX="90.0" layoutY="531.0" mnemonicParsing="false" onMouseClicked="#backScene" prefHeight="24.0" prefWidth="47.0" style="-fx-background-color: Transparent;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="58.0" fitWidth="325.0" layoutX="23.0" layoutY="360.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Immagini%20Progetto/Comfort.png" />
+         </image>
+      </ImageView>
+   </children>
+     </AnchorPane>

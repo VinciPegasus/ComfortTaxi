@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="565.0" prefWidth="373.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.ControllerQuartoScenario">
+   <children>
+      <ImageView fitHeight="565.0" fitWidth="373.0">
+         <image>
+            <Image url="@../../Immagini%20Progetto/appSfondo.jpg" />
+         </image>
+      </ImageView>
+      <Pane layoutX="16.0" layoutY="82.0" prefHeight="282.0" prefWidth="338.0" style="-fx-background-color: black;">
+         <children>
+            <Label alignment="CENTER" layoutX="8.0" layoutY="20.0" prefHeight="39.0" prefWidth="321.0" style="-fx-background-color: red;" text="Inserisci le seguenti informazioni:" textFill="#fffdfd">
+               <font>
+                  <Font name="DejaVu Sans Bold" size="12.0" />
+               </font></Label>
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="90.0" prefHeight="18.0" prefWidth="321.0" style="-fx-background-color: transparent;" text="Qual'è il nome della via nella quale ti trovi?" textFill="#eb0909" />
+            <TextField layoutX="18.0" layoutY="115.0" prefHeight="26.0" prefWidth="306.0" promptText="Es. Via Cesare Battisti 2" />
+            <TextField layoutX="18.0" layoutY="205.0" prefHeight="26.0" prefWidth="306.0" promptText="Es. Viale Dei Fiori 5" />
+            <Label alignment="CENTER" contentDisplay="CENTER" layoutX="7.0" layoutY="180.0" prefHeight="18.0" prefWidth="321.0" style="-fx-background-color: transparent;" text="Qual'è il nome della via nella quale sei diretto?" textFill="#0cf20c" />
+         </children>
+      </Pane>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="32.0" layoutY="38.0" prefHeight="33.0" prefWidth="306.0" text="Tranquillo, pochi minuti e saremo da te!">
+         <font>
+            <Font name="DejaVu Serif Bold" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="avanti" layoutX="57.0" layoutY="374.0" mnemonicParsing="false" onMouseClicked="#avantiScene" prefHeight="33.0" prefWidth="264.0" style="-fx-background-color: blue;" text="Avanti per il calcolo Distanza-Prezzo " textFill="#f4f5f4">
+         <font>
+            <Font name="DejaVu Sans Bold" size="11.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+      <ImageView fitHeight="40.0" fitWidth="242.0" layoutX="90.0" layoutY="522.5" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../Immagini%20Progetto/TastoIndietroCell.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="backButton" layoutX="90.0" layoutY="531.0" mnemonicParsing="false" onMouseClicked="#backScene" prefHeight="24.0" prefWidth="47.0" style="-fx-background-color: Transparent;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </Button>
+   </children>
+     </AnchorPane>
